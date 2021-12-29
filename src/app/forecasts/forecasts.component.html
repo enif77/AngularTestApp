@@ -1,0 +1,10 @@
+<h2>Forecasts</h2>
+<ul class="forecasts">
+  <li *ngFor="let forecast of forecasts"
+    [class.selected]="forecast === selectedForecast"
+    (click)="onSelect(forecast)">
+    <span class="badge">{{forecast.date}}</span> {{forecast.summary}}
+  </li>
+</ul>
+
+<app-forecast-detail [forecast]="selectedForecast"></app-forecast-detail>

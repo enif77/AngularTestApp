@@ -1,0 +1,8 @@
+<div *ngIf="forecast">
+
+    <h2>{{forecast.summary | uppercase}} Details</h2>
+    <div><span>date: </span>{{forecast.date}}</div>
+    <div><span>temperatureC: </span>{{forecast.temperatureC}}</div>
+    <div><span>temperatureF: </span>{{forecast.temperatureF}}</div>
+  
+  </div>
